@@ -4,7 +4,7 @@ import './checkout-item.style.scss'
 
 const CheckoutItem = ({ item }) => {
     const { name, imageUrl, price, quantity } = item;
-    const { clearItemFromCart, addItemToCart, removeItemToCart, total } = useContext(CartContext);
+    const { clearItemFromCart, addItemToCart, removeItemToCart } = useContext(CartContext);
 
     return (
         <div className='checkout-item-container'>
